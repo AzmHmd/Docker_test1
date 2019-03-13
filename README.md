@@ -1,29 +1,29 @@
 # Docker_test1
 
-**You can test BrainIAK without installing it using Docker:
+*You can test BrainIAK without installing it using Docker:
 
 docker pull brainiak/brainiak
 docker run -it -p 8888:8888 -v brainiak:/mnt --name demo brainiak/brainiak
 
-**To run Jupyter notebooks in the running container, try:
+*To run Jupyter notebooks in the running container, try:
 
 python3 -m notebook --allow-root --no-browser --ip=0.0.0.0
 
-**Then visit http://localhost:8888 in your browser and enter the token. Protip: run screen before running the notebook command.
+*Then visit http://localhost:8888 in your browser and enter the token. Protip: run screen before running the notebook command.
 -----------------------------------------------------------------------------
-**docker commands 
+*docker commands 
 
 docker container ls
 docker image ls
 -----------------------------------------------------------------------------
-**go to an image command line 
+*go to an image command line 
 
 docker run -d -it (IMAGE) /bin/bash
 docker ps -a
 docker exec -it (CONTAINER ID) /bin/bash
 -----------------------------------------------------------------------------
-**Use [docker images] to see the installed images and [docker ps] to see the running images. 
-**When you type [docker run] it takes the image, and makes it a living container with a running process. use [docker run -ti <image>:<tag> bash]
+*Use [docker images] to see the installed images and [docker ps] to see the running images. 
+*When you type [docker run] it takes the image, and makes it a living container with a running process. use [docker run -ti <image>:<tag> bash]
 ** Lastly, images have their own set of ids and containers have their own set of ids - they don't overlap. 
 ----------------------------------------------------------------------------------------------------------
 docker pull [sth]
